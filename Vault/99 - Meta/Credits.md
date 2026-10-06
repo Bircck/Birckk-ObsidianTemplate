@@ -16,7 +16,7 @@ These are links to the original creators' work; their posts and screenshots are 
 
 ## Artwork and data
 
-- The sunset background and six folder illustrations were AI-generated for this dashboard. The styling screenshot is an actual Obsidian capture supplied by Tobias, showing a sync reference note in a compact source-vault window. The dashboard image is a browser rendering of the included code and CSS with demo weather.
+- The sunset background and six folder illustrations were AI-generated for this dashboard. The styling screenshot is an actual Obsidian capture supplied by Tobias, showing a styled daily note in a compact source-vault window. The dashboard image is a browser rendering of the included code and CSS with demo weather.
 - [VTracer](https://github.com/visioncortex/vtracer) converted the folder illustrations to SVG paths. VTracer itself is not bundled.
 - [Open-Meteo](https://open-meteo.com/) provides weather data under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The dashboard shows derived forecast summaries and clothing hints, not official recommendations.
 - Folder and dashboard symbols are rendered through Obsidian and Iconize using [Lucide](https://lucide.dev/). Icon library files are not bundled.

@@ -10,11 +10,11 @@
 
 ## What it looks like in Obsidian
 
-<img src="assets/obsidian-setup.png" width="760" alt="Compact Obsidian window showing colored folders, icons, a sync reference note, local graph, and Calendar sidebar">
+<img src="assets/obsidian-setup.png" width="760" alt="Compact Obsidian window showing colored folders, icons, a styled daily note, local graph, and Calendar sidebar">
 
-**Colored folders** — included CSS · **Folder icons** — Iconize · **Calendar sidebar** — optional Calendar plugin.
+**Colored folders + weekday note colors** — included CSS · **Folder icons** — Iconize · **Calendar sidebar** — optional Calendar plugin.
 
-<sub>Screenshot of my own vault with a sync reference note, using Vanilla AMOLED. Notebook and weekday note styles are also included; see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
+<sub>Screenshot of my own vault with a styled daily note, using Vanilla AMOLED. The daily-note layout is customized; the template includes a simpler daily template with the same weekday CSS. For notebook styles and customization, see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
 
 ## Try it in three steps
 
