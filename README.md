@@ -10,11 +10,11 @@
 
 ## What it looks like in Obsidian
 
-![Actual Obsidian window showing colored numbered folders, sidebar icons, a placeholder note, and the Calendar sidebar](assets/obsidian-setup.png)
+<img src="assets/obsidian-setup.png" width="760" alt="Compact Obsidian window showing colored folders, icons, a sync reference note, local graph, and Calendar sidebar">
 
 **Colored folders** — included CSS · **Folder icons** — Iconize · **Calendar sidebar** — optional Calendar plugin.
 
-<sub>Screenshot of my own vault with a placeholder note, using Vanilla AMOLED. Notebook and weekday note styles are also included; see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
+<sub>Screenshot of my own vault with a sync reference note, using Vanilla AMOLED. Notebook and weekday note styles are also included; see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
 
 ## Try it in three steps
 
