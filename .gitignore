@@ -1,0 +1,17 @@
+# Local state
+**/.obsidian/workspace*.json
+**/.obsidian/cache/
+**/.obsidian/vault-stats.json
+**/.trash/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# Install plugins and themes through Obsidian. Keep only curated defaults.
+Vault/.obsidian/plugins/*
+!Vault/.obsidian/plugins/obsidian-icon-folder/
+Vault/.obsidian/plugins/obsidian-icon-folder/*
+!Vault/.obsidian/plugins/obsidian-icon-folder/data.json
+Vault/.obsidian/themes/
+Vault/.obsidian/icons/
