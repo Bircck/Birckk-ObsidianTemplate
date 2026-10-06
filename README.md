@@ -8,13 +8,13 @@
 | ✍️ Daily + project templates, five CSS snippets | [Appearance & plugins](Vault/99%20-%20Meta/Appearance.md) |
 | 🔄 Sync choices + backup guidance | [Desktop, laptop & phone](Vault/99%20-%20Meta/Sync.md) |
 
-## What the styling changes
+## What it looks like in Obsidian
 
-![Three annotated examples: numbered folder colors and icons, a paper-colored notebook note, and a daily note with a weekday palette](assets/note-styles.png)
+![Actual Obsidian window showing colored numbered folders, sidebar icons, a placeholder note, and the Calendar sidebar](assets/obsidian-setup.png)
 
-**①** Sidebar colors and icons · **②** Per-note paper and pen colors · **③** Seven weekday palettes.
+**Colored folders** — included CSS · **Folder icons** — Iconize · **Calendar sidebar** — optional Calendar plugin.
 
-<sub>Annotated browser preview using the included CSS and an illustrative note layout. These previews are not native Obsidian screenshots.</sub>
+<sub>Screenshot of my own vault with a placeholder note, using Vanilla AMOLED. Notebook and weekday note styles are also included; see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
 
 ## Try it in three steps
 
