@@ -1,0 +1,267 @@
+/* Scoped to Sunset Dashboard and its own folder picker. */
+.sunset-dashboard {
+  --file-line-width: 1400px;
+  --sd-text: #f4eced;
+  --sd-muted: #b7acbd;
+  --sd-dim: #a298af;
+  --sd-accent: #efb0a7;
+}
+.sunset-dashboard.markdown-preview-view { padding: 20px 26px 24px; }
+.sunset-dashboard .markdown-preview-sizer { max-width: 1400px; padding-bottom: 0 !important; min-height: 0 !important; }
+.sunset-dashboard .inline-title,
+.sunset-dashboard .metadata-container,
+.sunset-dashboard .mod-header { display: none; }
+.sunset-dashboard .block-language-dataviewjs { margin: 0; }
+.sunset-dashboard .sd-dashboard {
+  container-type: inline-size;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-width: 0;
+  padding: 32px 28px 16px;
+  border: 1px solid #e3bac52b;
+  border-radius: 18px;
+  color: var(--sd-text);
+  font-family: var(--font-interface);
+  background: #181620;
+  box-shadow: 0 18px 70px #0004;
+}
+.sunset-dashboard .sd-dashboard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(180deg, #17131a0a 0%, #17131a38 22%, #15131de0 78%, #15131df5), var(--sd-art);
+  background-size: cover;
+  background-position: center top;
+}
+.sunset-dashboard .sd-dashboard * { box-sizing: border-box; }
+.sunset-dashboard .sd-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 10px 9px 33px; min-height: 166px; text-shadow: 0 2px 20px #100c16; }
+.sunset-dashboard .sd-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: .2em; color: #fff0e7db; }
+.sunset-dashboard .sd-brand h1 { color: #fff1e9; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(48px, 6cqi, 74px); font-weight: 400; line-height: 1; letter-spacing: -.055em; margin: 10px 0 9px !important; }
+.sunset-dashboard .sd-subtitle { font-size: 12px; color: #f5dddade; letter-spacing: .02em; }
+.sunset-dashboard .sd-clock { text-align: right; padding: 12px 16px; background: #19131ddb; border: 1px solid #ffe5d936; border-radius: 12px; box-shadow: 0 5px 24px #100c1659; text-shadow: 0 2px 4px #000b; }
+.sunset-dashboard .sd-clock-time { display: block; font-variant-numeric: tabular-nums; font-size: clamp(28px, 4cqi, 46px); font-weight: 600; line-height: 1.25; letter-spacing: -.025em; margin: 4px 0; color: #fff4ee; }
+.sunset-dashboard .sd-clock-date { color: #f2d9d9; font-size: 12px; }
+.sunset-dashboard .sd-layout { display: grid; grid-template-columns: minmax(235px, 1.12fr) minmax(0, 2.15fr) minmax(190px, .93fr); gap: 14px; align-items: start; }
+.sunset-dashboard :is(.sd-left, .sd-center, .sd-right) { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.sunset-dashboard .sd-panel { min-width: 0; padding: 19px 17px; background: #1b1723f7; border: 1px solid #e8bdcc27; border-radius: 12px; box-shadow: 0 8px 24px #0a06162b;  }
+.sunset-dashboard .sd-panel-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+.sunset-dashboard .sd-panel-heading h2 { margin: 0; font-size: 10px; font-family: var(--font-interface); font-weight: 650; letter-spacing: .14em; text-transform: uppercase; color: #cfc0d4; line-height: 1.2; border: 0; }
+.sunset-dashboard .sd-icon { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.sunset-dashboard .sd-icon svg { width: 14px; height: 14px; stroke-width: 1.6px; }
+.sunset-dashboard .sd-panel-heading .sd-icon { color: var(--sd-accent); }
+.sunset-dashboard .sd-muted { color: var(--sd-muted); font-size: 11px; line-height: 1.5; }
+.sunset-dashboard .sd-micro { color: var(--sd-dim); font-size: 10px; line-height: 1.5; }
+.sunset-dashboard .sd-panel-intro { margin: -8px 0 20px; }
+.sunset-dashboard .sd-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 32px; height: auto; padding: 7px 11px;
+  margin: 0; border: 1px solid #cebbda29; border-radius: 7px;
+  color: var(--sd-text); background: #c0a1d40d; box-shadow: none;
+  font-family: inherit; font-size: 11px; font-weight: 450; line-height: 1.3; white-space: normal;
+  cursor: pointer; transition: background .16s ease, border-color .16s ease, transform .16s ease;
+}
+.sunset-dashboard .sd-button:hover { background: #e8b7ce16; border-color: #f0b7c770; color: #fff; }
+.sunset-dashboard .sd-button:focus-visible, .sunset-dashboard a:focus-visible, .sunset-dashboard input:focus-visible { outline: 2px solid #ffc7ac; outline-offset: 3px; }
+.sunset-dashboard .sd-button:disabled { opacity: .4; cursor: wait; }
+.sunset-dashboard .sd-button[hidden], .sunset-dashboard [hidden] { display: none !important; }
+.sunset-dashboard .sd-icon-button { width: 32px; padding: 6px; flex-shrink: 0; }
+.sunset-dashboard .sd-external { color: var(--sd-muted); font-size: 10px; text-decoration: none; background: none; padding: 0; }
+.sunset-dashboard .sd-external:hover { color: #ffd1bf; }
+.sunset-dashboard .sd-location { font-size: 18px; letter-spacing: -.025em; font-weight: 550; }
+.sunset-dashboard .sd-location-sub { font-size: 10px; margin-top: 3px; }
+.sunset-dashboard .sd-weather-main { display: flex; gap: 12px; align-items: center; margin: 18px 0 10px; }
+.sunset-dashboard .sd-weather-icon { color: #efc3a5; display: flex; }
+.sunset-dashboard .sd-weather-icon svg { width: 34px; height: 34px; stroke-width: 1.3px; }
+.sunset-dashboard .sd-temperature { font-size: 43px; letter-spacing: -.05em; font-weight: 350; line-height: 1; }
+.sunset-dashboard .sd-weather-description { font-size: 12px; color: #e3d5e4; }
+.sunset-dashboard .sd-weather-range { font-size: 11px; color: #b6a9c3; margin: 9px 0 16px; letter-spacing: .02em; }
+.sunset-dashboard .sd-weather-credit { display: inline-block; margin-top: 4px; font-size: 9px; }
+.sunset-dashboard .sd-peach { --card-color: #f2ba9b; }
+.sunset-dashboard .sd-rose { --card-color: #e9abc4; }
+.sunset-dashboard .sd-lavender { --card-color: #baa9e9; }
+.sunset-dashboard .sd-blue { --card-color: #a4c5df; }
+.sunset-dashboard .sd-mint { --card-color: #a2cbbc; }
+.sunset-dashboard .sd-sand { --card-color: #d9ca9f; }
+.sunset-dashboard .sd-cal-bar { display: flex; align-items: center; justify-content: space-between; margin: -3px 0 13px; gap: 4px; }
+.sunset-dashboard .sd-cal-title { font-size: 11px; color: #e6dce9; }
+.sunset-dashboard .sd-cal-nav { display: flex; gap: 3px; }
+.sunset-dashboard .sd-cal-nav .sd-button { width: 23px; min-height: 25px; padding: 2px; border: 0; background: transparent; }
+.sunset-dashboard .sd-cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 3px 1px; text-align: center; font-variant-numeric: tabular-nums; }
+.sunset-dashboard .sd-cal-weekday { color: #968aa3; font-size: 9px; line-height: 19px; }
+.sunset-dashboard .sd-cal-day { color: #c9bed2; font-size: 10px; line-height: 25px; border-radius: 5px; }
+.sunset-dashboard .sd-cal-day.sd-today { color: #211a24; background: #e5b8b8; font-weight: 700; box-shadow: 0 0 16px #ffc0bc15; }
+.sunset-dashboard .sd-timer-value { font-size: 38px; font-variant-numeric: tabular-nums; font-weight: 350; letter-spacing: -.04em; line-height: 1; margin: 0 0 10px; color: #f3e5ee; }
+.sunset-dashboard .sd-timer-state { font-size: 10px; color: var(--sd-muted); margin-bottom: 16px; }
+.sunset-dashboard .sd-presets { display: flex; gap: 5px; }
+.sunset-dashboard .sd-preset { flex: 1; font-size: 10px; min-height: 29px; padding: 4px; }
+.sunset-dashboard .sd-custom-time { margin: 10px 0 13px; }
+.sunset-dashboard .sd-custom-time label { display: flex; justify-content: space-between; align-items: center; color: var(--sd-muted); font-size: 10px; }
+.sunset-dashboard input.sd-duration { width: 59px; height: 27px; padding: 3px 5px; color: var(--sd-text); background: #ffffff06; border: 1px solid #cebbda29; border-radius: 5px; box-shadow: none; font-size: 11px; }
+.sunset-dashboard .sd-timer-actions { display: flex; gap: 7px; }
+.sunset-dashboard .sd-primary { flex: 1; background: #e5b8b821; border-color: #e5b8b852; color: #f5c7c1; }
+.sunset-dashboard .sd-music .sd-panel-heading { margin-bottom: 15px; }
+.sunset-dashboard .sd-music-body { display: flex; align-items: center; gap: 19px; }
+.sunset-dashboard .sd-album-placeholder, .sunset-dashboard .sd-album { width: 72px; height: 72px; flex: 0 0 72px; border-radius: 9px; object-fit: cover; }
+.sunset-dashboard .sd-album-placeholder { display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, #493345, #272132); border: 1px solid #c3a9cb2b; color: #c09fac; }
+.sunset-dashboard .sd-album-placeholder svg { width: 35px; height: 35px; stroke-width: 1px; }
+.sunset-dashboard .sd-music-details { min-width: 0; flex: 1; }
+.sunset-dashboard .sd-song-title { font-size: 16px; line-height: 1.45; font-weight: 550; color: #f5e7ed; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sunset-dashboard .sd-song-artist { color: #bdaec6; font-size: 12px; margin: 4px 0 5px; }
+.sunset-dashboard .sd-track-progress { display: block; width: min(100%, 380px); height: 3px; margin-top: 10px; border: 0; border-radius: 4px; accent-color: #dda7b5; }
+.sunset-dashboard .sd-track-progress::-webkit-progress-bar { background: #ffffff13; border-radius: 4px; }
+.sunset-dashboard .sd-track-progress::-webkit-progress-value { background: #dda7b5; border-radius: 4px; }
+.sunset-dashboard .sd-music-controls { display: flex; align-items: center; flex-direction: column; gap: 9px; flex-shrink: 0; }
+.sunset-dashboard .sd-transport { display: flex; align-items: center; gap: 8px; }
+.sunset-dashboard .sd-play { color: #f1c7bd; border-color: #d5a5b654; background: #d5a5b619; }
+.sunset-dashboard .sd-connect { border-color: #a3c6b640; color: #c3d7ce; }
+.sunset-dashboard .sd-open-spotify { font-size: 10px; }
+.sunset-dashboard .sd-footer { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin: 15px 3px 0; color: #ac9bae; font-size: 9px; letter-spacing: .035em; }
+.sunset-dashboard .sd-about { background: transparent; border: 0; padding: 3px; font-size: 9px; min-height: 23px; color: #ac9bae; }
+.sunset-dashboard-modal .suggestion-item { padding: 9px 12px; }
+@container (max-width: 950px) {
+  .sunset-dashboard .sd-layout { grid-template-columns: minmax(0, 1fr) minmax(190px, .52fr); }
+  .sunset-dashboard .sd-center { grid-column: 1; grid-row: 1; }
+  .sunset-dashboard .sd-right { grid-column: 2; grid-row: 1 / 3; }
+  .sunset-dashboard .sd-left { grid-column: 1; grid-row: 2; }
+}
+@container (max-width: 620px) {
+  .sunset-dashboard .sd-header { min-height: 145px; padding: 5px 0 28px; gap: 10px; }
+  .sunset-dashboard .sd-brand h1 { font-size: 50px; }
+  .sunset-dashboard .sd-eyebrow { font-size: 8px; letter-spacing: .12em; }
+  .sunset-dashboard .sd-subtitle { font-size: 10px; }
+  .sunset-dashboard .sd-clock-time { font-size: 28px; }
+  .sunset-dashboard .sd-clock-date { font-size: 10px; max-width: 140px; line-height: 1.5; }
+  .sunset-dashboard .sd-layout { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .sunset-dashboard .sd-center { grid-column: 1; grid-row: 1; }
+  .sunset-dashboard .sd-left { grid-column: 1; grid-row: 2; gap: 12px; }
+  .sunset-dashboard .sd-right { grid-column: 1; grid-row: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+  .sunset-dashboard .sd-panel { padding: 16px 13px; }
+  .sunset-dashboard .sd-music-body { flex-wrap: wrap; gap: 12px; }
+  .sunset-dashboard .sd-music-details { flex-basis: calc(100% - 85px); }
+  .sunset-dashboard .sd-music-controls { flex-direction: row; width: 100%; justify-content: space-between; }
+  .sunset-dashboard .sd-button { min-height: 38px; }
+  .sunset-dashboard .sd-cal-nav .sd-button { min-height: 32px; width: 26px; }
+}
+@container (max-width: 355px) {
+  .sunset-dashboard .sd-header { flex-wrap: wrap; }
+  .sunset-dashboard .sd-clock { text-align: left; }
+  .sunset-dashboard .sd-clock-date { max-width: none; }
+  .sunset-dashboard .sd-left, .sunset-dashboard .sd-right { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .sunset-dashboard.markdown-preview-view { padding: 8px; }
+  .sunset-dashboard .sd-dashboard { padding: 22px 12px 12px; border-radius: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sunset-dashboard .sd-button { transition: none; }
+}
+/* Each desktop column sizes independently; music stays 14px below the cards. */
+@container (min-width: 951px) {
+  .sunset-dashboard .sd-right { grid-column: 3; grid-row: 1; }
+  .sunset-dashboard .sd-left { grid-column: 1; grid-row: 1; }
+}
+.sunset-dashboard .sd-header { min-height: 142px; padding-bottom: 26px; }
+.sunset-dashboard .sd-weather-main { margin: 14px 0 9px; }
+.sunset-dashboard .sd-weather-range { margin-bottom: 12px; }
+
+/* Compact static artwork; intentionally no animated filters or glass blur. */
+.sunset-dashboard .sd-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.sunset-dashboard .sd-card { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px; min-height: 106px; padding: 14px; border: 1px solid color-mix(in srgb, var(--card-color) 25%, transparent); background: linear-gradient(135deg, color-mix(in srgb, var(--card-color) 12%, transparent), #201b2700); border-radius: 9px; color: var(--card-color); }
+.sunset-dashboard .sd-card:hover { background: color-mix(in srgb, var(--card-color) 14%, #211b29); border-color: color-mix(in srgb, var(--card-color) 65%, transparent); }
+.sunset-dashboard .sd-card-art { display: block; width: 36px; height: 36px; color: var(--card-color); overflow: hidden; }
+.sunset-dashboard .sd-card-caption { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 5px; }
+.sunset-dashboard .sd-card-label { font-size: 12px; font-weight: 550; color: #f4e9f0; }
+.sunset-dashboard .sd-card-arrow { font-size: 14px; opacity: .6; }
+.sunset-dashboard .sd-panel-heading { margin-bottom: 14px; }
+.sunset-dashboard .sd-weather-main { margin: 13px 0 9px; }
+.sunset-dashboard .sd-weather-description { margin-bottom: 5px; }
+.sunset-dashboard .sd-weather-advice { margin: 16px 0 18px; padding: 12px 11px; background: #e7b9a60b; border-left: 2px solid #d9a897; border-radius: 0 6px 6px 0; }
+.sunset-dashboard .sd-advice-title { font-size: 13px; line-height: 1.5; font-weight: 600; color: #f2c7b6; }
+.sunset-dashboard .sd-advice-detail { font-size: 10px; line-height: 1.65; margin-top: 5px; color: #c1b2bf; }
+.sunset-dashboard .sd-hourly-label { font-size: 10px; color: #cbbcca; margin-bottom: 9px; }
+.sunset-dashboard .sd-hourly-chart { color: #e3ae9e; }
+.sunset-dashboard .sd-hourly-chart svg { display: block; width: 100%; height: 50px; }
+.sunset-dashboard .sd-hourly-strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; margin-bottom: 18px; }
+.sunset-dashboard .sd-hour { display: flex; flex-direction: column; gap: 5px; align-items: center; font-variant-numeric: tabular-nums; }
+.sunset-dashboard .sd-hour-time { font-size: 10px; color: #a798af; }
+.sunset-dashboard .sd-hour-temp { font-size: 14px; color: #f3e3e9; }
+.sunset-dashboard .sd-hour-rain { font-size: 9px; color: #a3bfd5; }
+.sunset-dashboard .sd-music-body { gap: 12px; flex-wrap: wrap; }
+.sunset-dashboard .sd-music .sd-album, .sunset-dashboard .sd-music .sd-album-placeholder { width: 54px; height: 54px; flex-basis: 54px; }
+.sunset-dashboard .sd-music-details { flex-basis: calc(100% - 66px); }
+.sunset-dashboard .sd-music-controls { width: 100%; flex-direction: row; justify-content: space-between; margin-top: 3px; }
+.sunset-dashboard .sd-song-title { font-size: 14px; }
+.sunset-dashboard .sd-song-artist { font-size: 11px; }
+.sunset-dashboard .sd-load-error { white-space: pre-wrap; color: #f5cbc4; }
+
+@container (max-width: 620px) {
+  .sunset-dashboard .sd-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .sunset-dashboard .sd-card { min-height: 99px; padding: 8px 10px; }
+  .sunset-dashboard .sd-card-art { width: 32px; height: 32px; }
+}
+
+/* One compact timer: readout, duration choices, controls. */
+.sunset-dashboard .sd-timer-readout { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 13px; }
+.sunset-dashboard .sd-timer-value { font-size: 34px; margin: 0; }
+.sunset-dashboard .sd-timer-state { margin: 0; font-size: 10px; }
+.sunset-dashboard .sd-timer-settings { display: flex; align-items: center; gap: 6px; margin-bottom: 13px; }
+.sunset-dashboard .sd-presets { flex: 1; min-width: 0; gap: 4px; }
+.sunset-dashboard .sd-preset { min-width: 0; padding: 4px 2px; }
+.sunset-dashboard .sd-custom-time { margin: 0; }
+.sunset-dashboard .sd-custom-time label { gap: 3px; }
+.sunset-dashboard input.sd-duration { width: 37px; height: 29px; padding: 3px; text-align: center; appearance: textfield; -moz-appearance: textfield; }
+.sunset-dashboard input.sd-duration::-webkit-inner-spin-button,
+.sunset-dashboard input.sd-duration::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+@container (max-width: 620px) {
+  .sunset-dashboard .sd-timer-settings { flex-wrap: wrap; }
+  .sunset-dashboard input.sd-duration { height: 38px; }
+}
+
+/* Explicit placement also protects desktop layout while the view refreshes. */
+@container (min-width: 951px) {
+  .sunset-dashboard .sd-center { grid-column: 2; grid-row: 1; }
+}
+.sunset-dashboard .sd-music { padding-top: 14px; padding-bottom: 14px; }
+.sunset-dashboard .sd-music .sd-panel-heading { margin-bottom: 12px; }
+.sunset-dashboard .sd-song-artist { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sunset-dashboard .sd-cal-day { line-height: 22px; }
+
+/* Compact weather: current conditions, dated outlook, then useful advice. */
+.sunset-dashboard .sd-weather { padding: 16px 14px; }
+.sunset-dashboard .sd-weather .sd-panel-heading { margin-bottom: 12px; }
+.sunset-dashboard .sd-weather-now { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 14px; }
+.sunset-dashboard .sd-weather-summary { min-width: 0; }
+.sunset-dashboard .sd-weather .sd-location { font-size: 17px; }
+.sunset-dashboard .sd-current-stamp { color: #c0b2c5; font-size: 10px; line-height: 1.45; margin: 3px 0 6px; }
+.sunset-dashboard .sd-weather-main { flex-direction: column; gap: 3px; margin: 0; flex-shrink: 0; }
+.sunset-dashboard .sd-weather-icon svg { width: 26px; height: 26px; }
+.sunset-dashboard .sd-temperature { font-size: 36px; font-weight: 500; }
+.sunset-dashboard .sd-weather-description { margin-bottom: 2px; }
+.sunset-dashboard .sd-hourly-label { border-top: 1px solid #e8bdcc20; padding-top: 11px; margin-bottom: 5px; font-size: 11px; font-weight: 600; color: #efdae0; }
+.sunset-dashboard .sd-hourly-chart svg { height: 28px; }
+.sunset-dashboard .sd-hourly-strip { gap: 4px; margin: 5px 0 0; }
+.sunset-dashboard .sd-hour { gap: 5px; }
+.sunset-dashboard .sd-hour-time { font-size: 9px; color: #c5b7cd; }
+.sunset-dashboard .sd-hour-icon { display: flex; color: #eac7ab; }
+.sunset-dashboard .sd-hour-icon svg { width: 17px; height: 17px; stroke-width: 1.6; }
+.sunset-dashboard .sd-weather-advice { margin: 12px 0 9px; padding: 9px 10px; }
+.sunset-dashboard .sd-advice-period { color: #cdbac5; font-size: 9px; line-height: 1.4; margin-bottom: 4px; }
+.sunset-dashboard .sd-advice-title { font-size: 12px; line-height: 1.4; }
+.sunset-dashboard .sd-advice-detail { font-size: 10px; line-height: 1.4; margin-top: 3px; }
+.sunset-dashboard .sd-weather > .sd-micro { font-size: 9px; }
+@container (max-width: 620px) {
+  .sunset-dashboard .sd-clock { padding: 9px 11px; }
+  .sunset-dashboard .sd-weather-now { margin-bottom: 10px; }
+}
+
+/* Illustration cards: full-width vector scenes with a separate readable caption. */
+.sunset-dashboard .sd-card { padding: 0; gap: 0; overflow: hidden; justify-content: flex-start; background: #241b2d; }
+.sunset-dashboard .sd-card .sd-card-art { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; flex-shrink: 0; border-radius: 0; }
+.sunset-dashboard .sd-card-caption { padding: 9px 11px; }
+.sunset-dashboard .sd-card:hover .sd-card-caption { background: #ffffff08; }
+/* Five equal columns: chart points at 10/30/50/70/90% exactly match labels. */
+.sunset-dashboard .sd-hourly-chart { width: 100%; margin: 0; padding: 0; }
+.sunset-dashboard .sd-hourly-chart svg { display: block; width: 100%; max-width: none; height: 38px; margin: 0; padding: 0; overflow: visible; }
+.sunset-dashboard .sd-hourly-strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; column-gap: 0; padding: 0; margin: 5px 0 0; }

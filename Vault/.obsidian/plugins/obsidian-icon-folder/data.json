@@ -1,0 +1,85 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "rules": [
+      {
+        "rule": "00 - Maps of Content",
+        "icon": "LiGlobe",
+        "for": "everything",
+        "order": 0
+      },
+      {
+        "rule": "01 - Projects",
+        "icon": "LiPenTool",
+        "for": "everything",
+        "order": 1
+      },
+      {
+        "rule": "02 - Areas",
+        "icon": "LiBox",
+        "for": "everything",
+        "order": 2
+      },
+      {
+        "rule": "03 - Resources",
+        "icon": "LiBook",
+        "for": "everything",
+        "order": 3
+      },
+      {
+        "rule": "04 - Permanent",
+        "icon": "LiBadge",
+        "for": "everything",
+        "order": 4
+      },
+      {
+        "rule": "05 - Fleeting",
+        "icon": "LiPen",
+        "for": "everything",
+        "order": 5
+      },
+      {
+        "rule": "06 - Daily",
+        "icon": "LiCalendar",
+        "for": "everything",
+        "order": 6
+      },
+      {
+        "rule": "07 - Archives",
+        "icon": "LiArchive",
+        "for": "everything",
+        "order": 7
+      },
+      {
+        "rule": "98 - Attachments",
+        "icon": "LiPaperclip",
+        "for": "everything",
+        "order": 8
+      },
+      {
+        "rule": "99 - Meta",
+        "icon": "LiAtom",
+        "for": "everything",
+        "order": 9
+      },
+      {
+        "rule": "Excalidraw",
+        "icon": "LiPencilRuler",
+        "for": "everything",
+        "order": 10
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "lucideIconPackType": "native"
+  },
+  "Start here.md": "LiAsterisk"
+}
