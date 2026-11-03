@@ -1,54 +1,72 @@
 # Birckk Obsidian Template
 
-**An example vault with colorful folders, styled notes, daily/project templates, and setup/sync guides.** Copy it, open it in Obsidian, and make it yours.
+A colorful Obsidian vault you can download and start writing in.
 
-| In the box | Start here |
+<img src="assets/obsidian-setup.png" width="760" alt="Obsidian window with colored numbered folders, a styled daily note, local graph and calendar">
+
+<sub>My own vault, with a customized daily note and the optional Iconize and Calendar plugins.</sub>
+
+## What's in here
+
+The vault works on its own. The rest is optional.
+
+| Part | What it is |
 | --- | --- |
-| 🗂️ Numbered folders + linked example notes | [Explore the vault](Vault/Start%20here.md) |
-| ✍️ Daily + project templates, five CSS snippets | [Appearance & plugins](Vault/99%20-%20Meta/Appearance.md) |
-| 🔄 Sync choices + backup guidance | [Desktop, laptop & phone](Vault/99%20-%20Meta/Sync.md) |
+| 🎨 **[The look](#the-look)** | Colored folders and weekday notes. No plugins needed. Styling by [CyanVoxel](https://github.com/CyanVoxel). |
+| 🌴 **[Sunset Dashboard](#sunset-dashboard)** | A start page with folder cards, weather, a calendar and a timer. |
+| 🔄 **[Syncing](#syncing)** | What I use, and the other ways to get a vault onto all your devices. |
+| 📚 **[Book covers](#book-covers)** | Your book notes as a shelf of hardcovers. |
+| 🧩 **[Appearance and plugins](Vault/99%20-%20Meta/Appearance.md)** | What each style does, and when each plugin is useful. |
+| 💡 **[Ideas and credits](Vault/99%20-%20Meta/Credits.md)** | Videos, posts and setups I learned from. |
 
-## What it looks like in Obsidian
+## The look
 
-<img src="assets/obsidian-setup.png" width="760" alt="Compact Obsidian window showing colored folders, icons, a styled daily note, local graph, and Calendar sidebar">
+<table>
+<tr>
+<td align="center" valign="top"><img src="assets/folders.png" height="250" alt="Obsidian sidebar with colored, numbered folders from 00 Maps of Content to 99 Meta"><br>🌈 <b>Colored folders</b></td>
+<td align="center" valign="top"><img src="assets/weekdays.png" width="250" alt="Seven weekday names, each in its own daily note color"><br>📅 <b>Weekday colors</b></td>
+<td align="center" valign="top"><img src="assets/notebook.png" width="250" alt="Manila, white and blueprint grid paper pages"><br>📓 <b>Notebook paper</b></td>
+</tr>
+</table>
 
-**Colored folders + weekday note colors** — included CSS · **Folder icons** — Iconize · **Calendar sidebar** — optional Calendar plugin.
+<sub>Folder icons come from the optional Iconize plugin.</sub>
 
-<sub>Screenshot of my own vault with a styled daily note, using Vanilla AMOLED. The daily-note layout is customized; the template includes a simpler daily template with the same weekday CSS. For notebook styles and customization, see the [appearance guide](Vault/99%20-%20Meta/Appearance.md).</sub>
+## Sunset Dashboard
 
-## Try it in three steps
+![Sunset Dashboard with illustrated folder cards, weather, calendar and a focus timer](assets/dashboard.png)
 
-1. [Download ZIP](https://github.com/Bircck/Birckk-ObsidianTemplate/archive/refs/heads/main.zip), extract it, and copy **Vault** to your own notes location.
-2. In Obsidian, **Open folder as vault** → select **Vault** → open **Start here**. The snippets are already selected under **Appearance → CSS snippets**.
-3. Start writing, or use **Daily notes** and **Templates** to create your first note. Add only the extras you want below.
+It needs the Dataview plugin. See the [setup guide](Vault/99%20-%20Meta/Dashboard/README.md).
 
-## Which plugins do I need?
+## Syncing
 
-| I want… | Install / enable |
-| --- | --- |
-| 🗂️ Folders, colors & notebook styles | **Nothing extra** — included CSS |
-| ✍️ Daily & project templates | **Daily notes + Templates** — built in, already enabled |
-| ◇ Sidebar icons | **Iconize** → included folder rules |
-| 🔄 Sync between devices | **Choose one sync method** — [guide](Vault/99%20-%20Meta/Sync.md) |
+Pick one. Running two over the same vault can cause conflicts.
 
-Optional: **Calendar** for daily-note navigation · **Tasks** for task queries · **Excalidraw** for sketches · **Homepage** to open a chosen note on launch. [Plugin links & details →](Vault/99%20-%20Meta/Appearance.md)
+- ⚡ Plugin based: 
+    - Self-hosted [LiveSync](https://github.com/vrtmrz/obsidian-livesync): What I use, and it works well. Changes sync instantly through your own server. 
+    - Online-storage [Remotely Save](https://github.com/remotely-save/remotely-save) is another plugin to look at, and it uses cloud-storage you already have.
+- 💜 [Obsidian Sync](https://obsidian.md/sync): the official paid service.
+- ☁️ Cloud folders: OneDrive, iCloud, Google Drive and so on. I've never properly tested these, so read [Obsidian's guide](https://obsidian.md/help/sync-notes) first.
+- 🔗 [Syncthing](https://syncthing.net/): copies files directly between devices. Colleagues and friends have had good success with it, but the mobile apps have changed over time, so check which one is current.
+- 🌿 [Obsidian Git](https://github.com/Vinzent03/obsidian-git): Good for version history/backups and can be combined with other approaches. 
+    - But I like instant syncing between phone <-> pc, so I don't use it for sync.
 
-The default dark theme works; **Vanilla AMOLED** is optional. Plugins and accounts are configured separately. Keep personal notes and backups separate from this public repository.
+## Book covers
 
-## Made from good ideas
+<img src="assets/book-covers.webp" width="760" alt="Obsidian Books window with a row of six hardcover books in a Bases card view">
 
-Built on [CyanVoxel's vault styling](https://github.com/CyanVoxel/Obsidian-Vault-Template). [All credits & inspiration →](Vault/99%20-%20Meta/Credits.md)
+<sub>Screenshot from [kepano's gist](https://gist.github.com/kepano/8afc4cad9c32f4fde6ef6347f66a0571).</sub>
 
-[MIT license](LICENSE) · [Third-party notices](THIRD-PARTY-NOTICES.md)
+kepano, Obsidian's CEO, wrote [a small CSS snippet](https://gist.github.com/kepano/8afc4cad9c32f4fde6ef6347f66a0571) that turns a Bases card view into hardcover books ([Reddit post](https://www.reddit.com/r/ObsidianMD/comments/1ogpxtg/hardcover_book_effect_for_card_view/)). I use it for my own books: each note gets a tag and a `cover` image property, and a Base shows them as cards. The snippet isn't in this template, so grab it from the gist.
 
-## Optional extra: Sunset Dashboard
+## Try it
 
-A visual start page with folder cards, weather, a calendar, and a timer. The folders, templates, and note styles work without it.
+1. 📦 [Download the ZIP](https://github.com/Bircck/Birckk-ObsidianTemplate/archive/refs/heads/main.zip), extract it, and copy **Vault** to where you keep your notes.
+2. 📂 In Obsidian, choose **Open folder as vault** and select **Vault**.
+3. 👋 Open **Start here**.
 
-![Sunset Dashboard with illustrated folder cards, weather, calendar, a focus timer, and optional Spotify controls](assets/dashboard.png)
+## Credits
 
-**Requires Dataview → JavaScript queries.** Open the dashboard in **Reading view**. [Setup & customization →](Vault/99%20-%20Meta/Dashboard/README.md)
+This started with [CyanVoxel's vault template](https://github.com/CyanVoxel/Obsidian-Vault-Template). [CyanVoxel's videos](https://www.youtube.com/@CyanVoxel/videos) are awesome, go watch them.  
+The dashboard layout was inspired by [InlitX / Komorebi](https://github.com/InlitX/Obsidian-Dashboard-Gallery).
 
-Spotify controls additionally require **Spotify Control**, account setup, and Premium. Native mobile behavior and authenticated Spotify playback are not verified.
-
-<sub>Browser preview using demo weather. Layout inspired by [InlitX / Komorebi](https://github.com/InlitX/Obsidian-Dashboard-Gallery).</sub>
+[All credits](Vault/99%20-%20Meta/Credits.md) · [MIT license](LICENSE) · [Third-party notices](THIRD-PARTY-NOTICES.md)
