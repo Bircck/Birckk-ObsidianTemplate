@@ -4,7 +4,7 @@ An optional visual home for the vault: illustrated folder cards, local clock, we
 
 ## Open it
 
-Install and enable **Dataview**, turn on **JavaScript queries** in its settings, and enable the **sunset-dashboard** CSS snippet under Appearance. Open [[00 - Maps of Content/Sunset Dashboard|Sunset Dashboard]] in Reading view. Close and reopen the note if a changed view does not refresh.
+Install and enable **Dataview** and turn on **JavaScript queries** in its settings. The **sunset-dashboard** CSS snippet is already on. Open [[00 - Maps of Content/Sunset Dashboard|Sunset Dashboard]] in Reading view. Close and reopen the note if a changed view does not refresh.
 
 ## Customize it
 

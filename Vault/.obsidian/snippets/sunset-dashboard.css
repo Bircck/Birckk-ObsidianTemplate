@@ -265,3 +265,6 @@
 .sunset-dashboard .sd-hourly-chart { width: 100%; margin: 0; padding: 0; }
 .sunset-dashboard .sd-hourly-chart svg { display: block; width: 100%; max-width: none; height: 38px; margin: 0; padding: 0; overflow: visible; }
 .sunset-dashboard .sd-hourly-strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; column-gap: 0; padding: 0; margin: 5px 0 0; }
+
+/* Clicks go to the card, not the image: Obsidian opens images clicked in reading view. */
+.sunset-dashboard .sd-card-art, .sunset-dashboard .sd-card-caption, .sunset-dashboard .sd-album { pointer-events: none; }

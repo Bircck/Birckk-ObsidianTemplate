@@ -29,7 +29,7 @@ The vault works on its own. The rest is optional.
 </tr>
 </table>
 
-<sub>Folder icons come from the optional Iconize plugin. The styling comes from [CyanVoxel's vault template](https://github.com/CyanVoxel/Obsidian-Vault-Template), so go check it out.</sub>
+<sub>Folder icons come from the optional Iconize plugin, and the theme is [Vanilla AMOLED](https://github.com/sakuraisayeki/vanilla-amoled-theme) (Settings → Appearance → Themes). The styling comes from [CyanVoxel's vault template](https://github.com/CyanVoxel/Obsidian-Vault-Template), so go check it out.</sub>
 
 ## Sunset Dashboard
 
