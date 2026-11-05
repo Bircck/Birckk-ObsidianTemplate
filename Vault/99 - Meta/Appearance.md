@@ -39,6 +39,10 @@ Start with the built-in Daily notes, Templates, Bookmarks, Canvas, and File reco
 
 Install only the plugins you want. Each device needs its own working installation and any required authentication.
 
+## Browser extension
+
+[Obsidian Web Clipper](https://obsidian.md/clipper) is a browser extension rather than a plugin. It saves web pages as notes in your vault, and its templates control how each page is saved.
+
 ## Why the baseline stays small
 
 My setup started with CyanVoxel’s template and grew through individual additions. The notebook classes are useful for particular notes; they do not need to be applied everywhere. The dashboard is an optional way into the same folders.
