@@ -35,3 +35,7 @@ None are installed, so add the ones you want under Settings → Community plugin
 | [Homepage](https://github.com/mirnovov/obsidian-homepage) | Open the dashboard on startup |
 | [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) | Settings for themes and snippets that support it |
 | [Spotify Control](https://github.com/caezium/obsidian-spotify-control) | Music controls on the dashboard |
+
+## Browser extension
+
+[Obsidian Web Clipper](https://obsidian.md/clipper) is a browser extension, not a plugin. It saves web pages as notes, and its templates decide how each page is saved.
