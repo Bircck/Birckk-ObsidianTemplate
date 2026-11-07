@@ -59,6 +59,8 @@ Pick one. Running two over the same vault can cause conflicts.
 
 kepano, Obsidian's CEO, wrote [a small CSS snippet](https://gist.github.com/kepano/8afc4cad9c32f4fde6ef6347f66a0571) that turns a Bases card view into hardcover books ([Reddit post](https://www.reddit.com/r/ObsidianMD/comments/1ogpxtg/hardcover_book_effect_for_card_view/)). I use it for my own books: each note gets a tag and a `cover` image property, and a Base shows them as cards. The snippet isn't in this template, so grab it from the gist.
 
+To add books faster, try [Obsidian Web Clipper](https://obsidian.md/clipper). It's a browser extension that saves a web page as a note, and its templates let you choose which details end up as properties, like the author and cover.
+
 ## Try it
 
 1. 📦 [Download the ZIP](https://github.com/Bircck/Birckk-ObsidianTemplate/archive/refs/heads/main.zip), extract it, and copy **Vault** to where you keep your notes.
